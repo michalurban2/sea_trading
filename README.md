@@ -12,14 +12,15 @@
   - object field (self)
   - class field
 - python features (magic methods)
-    - `__str__` -> string
-    - `__len__` -> int (ilość elementów wewnątrz obiektu)
-    - `__repr__` -> string
-    - `__formant__` -> string (pozwala dodawać formatter`y)
-    - `__name__` -> string
-    - `__init__` -> zawraca None (x = x())
-    - `__new__` -> self/object (constructor)
-- constructor (metoda, która tworzy object)
+    - `__str__` -> string 
+    - `__len__` -> int (ilość elementów wewnątrz obiektu), każda klasa może mieć
+    - `__repr__` -> string -> reprezentacja obiektu dla programisty 
+    - `__formant__` -> string (pozwala dodawać formatter`y) x.format(), 
+    - `__name__` -> string (nazwa klasy)
+    - `__init__` -> zawraca None (x = x()) - setowanie pól obiektu DRUGI
+    - `__new__` -> self/object (constructor) PIERWSZY
+    - `__dict__` -> pola 
+- constructor (metoda, która tworzy object '__new__')
 - object descriptor/data object descriptor (getter/setter/setter)
 - property - class data object descriptor property
 - super() -> wywołuje metodę rodzica (MRO), wywołuje pierwszą, która znajdzie
