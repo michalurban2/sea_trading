@@ -39,3 +39,4 @@ class Itinerary:
                 break
 
         self._locations = self._locations[:stop]
+
