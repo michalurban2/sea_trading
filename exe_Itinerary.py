@@ -31,11 +31,11 @@ class Itinerary:
 
     def truncate_at(self, name):
         # Np. przyjmujemy Łódź i po łodzi wszytko kasujemy
-        stop = 0
+        stop = None
 
         for idx, location in enumerate(self._locations): # wyciąga index
             if location.name == name:
                 stop = idx + 1
                 break
 
-            self._locations = self._locations[:stop]
+        self._locations = self._locations[:stop]
